@@ -10,8 +10,8 @@ resources:
       endpoint: crux
     - repository: tests
       type: github
-      name: ObjectivityLtd/jmeter_simple_test
-      ref: refs/heads/release/0.8.0
+      name: gabrielstar/crux-app
+      ref: refs/heads/master
       endpoint: crux
 
 parameters:
