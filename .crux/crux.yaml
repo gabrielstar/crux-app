@@ -10,7 +10,7 @@ resources:
       endpoint: crux
     - repository: tests
       type: github
-      name: gabrielstar/crux
+      name: gabrielstar/crux-app
       ref: refs/heads/master
       endpoint: crux
 
