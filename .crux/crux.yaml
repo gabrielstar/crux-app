@@ -7,7 +7,7 @@ resources:
       type: github
       name: ObjectivityLtd/crux
       ref: refs/heads/release/0.8.0
-      #endpoint: crux
+      endpoint: crux
 
 parameters:
   - name: mode
