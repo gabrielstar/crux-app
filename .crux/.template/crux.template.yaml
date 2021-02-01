@@ -44,8 +44,6 @@ jobs:
         - checkout: self
           displayName: TESTS clone
           path: s/_tests
-          timeoutInMinutes: ${{ parameters.timeoutInMinutes }}
-          condition: and(succeeded(), not(eq(variables.tests_clone, false)))
         - template: ${{ parameters.crux_templates }}/prepare_tests/prepare_tests.yaml@crux
         - template: ${{ parameters.crux_templates }}/validate_configuration/validate_configuration.yaml@crux
           parameters:
