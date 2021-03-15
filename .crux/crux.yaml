@@ -69,7 +69,14 @@ variables:
   _crux_kubernetes_service_connection: ${{ parameters.kubernetes_service_connection }}
   _crux_cluster_deployment_namespace: crux$(Build.BuildID)
 
-jobs:
+stages:
+- stage:
+  jobs:
+  - job: build app
+    steps:
+    - bash: echo "app building ..."
+- stage:
+  jobs:
   - template: .template/crux.template.yaml
     parameters:
       mode: ${{ parameters.mode }}
