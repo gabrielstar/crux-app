@@ -70,14 +70,16 @@ variables:
   _crux_cluster_deployment_namespace: crux$(Build.BuildID)
 
 stages:
-- stage: Build and Deploy
+- stage: Build_and_Deploy
+  displayName: Build and Deploy App
   jobs:
   - job: build_app
     displayName: Build App
     steps:
     - bash: echo "app building ..."
       displayName: Build, Compile, Test
-- stage: Performance Tests
+- stage: Performance_Tests
+  displayName: Performance Tests
   jobs:
   - template: .template/crux.template.yaml
     parameters:
