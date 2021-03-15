@@ -72,9 +72,11 @@ variables:
 stages:
 - stage:
   jobs:
-  - job: build app
+  - job: build_app
+    displayName: Build App
     steps:
     - bash: echo "app building ..."
+      displayName: Build
 - stage:
   jobs:
   - template: .template/crux.template.yaml
