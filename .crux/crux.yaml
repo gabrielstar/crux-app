@@ -5,7 +5,7 @@ resources:
     - repository: crux
       type: github
       name: ObjectivityLtd/crux
-      ref: refs/heads/release/0.8.3
+      ref: refs/heads/release/0.8.4
       endpoint: crux
 
 parameters:
